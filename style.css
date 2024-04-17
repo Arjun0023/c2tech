@@ -1,0 +1,44 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: white;
+}
+.logo img {
+    width: 50%; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.voice-input {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.voice-input input[type="text"] {
+    padding: 20px;
+    width: 1200px;
+    height: 600px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 80px; /* Increased font size */
+}
+
+.voice-input img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.voice-input input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

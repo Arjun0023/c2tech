@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" id="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="voice-input" id="voiceInput">
+            <img src="mic.png" alt="Microphone">
+            <input type="text" placeholder="Speak...">
+        </div>
+        <div class="voice-input" id="voiceInput">
+            <img src="mic.png" alt="Microphone">
+            <input type="text" placeholder="Listening...">
+            <video id="spinner" autoplay loop muted style="display: none;">
+                <source src="Loading_01_mee4qh.gif" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
