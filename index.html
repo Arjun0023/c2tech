@@ -11,19 +11,19 @@
         <div class="logo" id="logo">
             <img src="logo.png" alt="Logo">
         </div>
-        <div class="voice-input" id="voiceInput">
-            <img src="mic.png" alt="Microphone">
-            <input type="text" placeholder="Speak...">
-        </div>
-        <div class="voice-input" id="voiceInput">
-            <img src="mic.png" alt="Microphone">
-            <input type="text" placeholder="Listening...">
-            <video id="spinner" autoplay loop muted style="display: none;">
-                <source src="Loading_01_mee4qh.gif" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
     </nav>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <div class="close-btn" id="closeBtn">&times;</div>
+            <div id="speechTextContainer">
+                <input type="text" class="input-box" placeholder="Enter your text...">
+            </div>
+        </div>
+    </div>
+    <!-- Buffering GIF -->
+    <div id="spinner" class="spinner" style="display: none;">
+        <img src="buffering.gif" alt="Buffering" class="buffering-gif">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

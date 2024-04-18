@@ -12,33 +12,65 @@ nav {
     cursor: pointer;
 }
 
-.voice-input {
+
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5000px; /* Adjust width as needed */
+    height: 1000px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
     display: none;
-    align-items: center;
-    justify-content: center;
+}
+
+.overlay-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.voice-input input[type="text"] {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1000px; /* Add a max-width to prevent it from stretching too much */
+    height: 500px; /* Remove fixed height */
+    max-height: 100%; /* Add a max-height to prevent it from stretching too much */
+    background-color: white;
     padding: 20px;
-    width: 1200px;
-    height: 600px;
     border-radius: 10px;
-    border: 2px solid #ccc;
-    font-size: 80px; /* Increased font size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow for styling */
+    overflow: auto; /* Add overflow property to allow scrolling if content exceeds */
 }
 
-.voice-input img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+.input-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the input horizontally */
+    padding: 15px; /* Increase padding for better visibility */
+    border: 2px solid #0896ee; /* Add a border to the input */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    font-size: 20px; /* Increase font size */
+    text-align: center; /* Center align text */
 }
 
-.voice-input input[type="text"] {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure the buffering GIF appears above other elements */
+}
+
+.buffering-gif {
+    display: block;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
 }
