@@ -68,20 +68,6 @@ nav {
     font-size: 20px; /* Increase font size */
     text-align: center;
 }
-.input3-box{
-    position: absolute;
-    height: 2px;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    width: 50%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the input horizontally */
-    padding: 15px; /* Increase padding for better visibility */
-    border: 1px solid #434546; /* Add a border to the input */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    font-size: 20px; /* Increase font size */
-    text-align: center;
-}
 
 .close-btn {
     position: absolute;
